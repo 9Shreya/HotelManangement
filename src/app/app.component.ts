@@ -8,8 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'projectAngular';
   openNav() {
-    document.getElementById('mySidenav').style.width = '200px';
-    document.querySelector('main').style.marginRight = '180px';
+    document.getElementById('mySidenav').style.width = '300px';
+    document.querySelector('main').style.marginRight = '250px';
+    document.querySelector('footer').style.marginRight = '250px';
   }
 
   closeNav() {

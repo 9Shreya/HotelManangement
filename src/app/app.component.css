@@ -103,9 +103,11 @@ nav {
 }
 #buttonArticle {
   height: 50px;
-  width: 180px;
-  padding-bottom: 40px;
+  width: 300px;
   margin-left: -20px;
+
+  padding-bottom: 40px;
+  /* margin-left: -10px; */
   color: lightgoldenrodyellow;
   background-color: black;
   border: none;
@@ -119,8 +121,10 @@ a {
   color: lightgoldenrodyellow;
   font-weight: bold;
 }
-.dropdown {
-  text-transform: none;
+.dropdown-menu,
+.dropdown-item {
+  text-transform: none !important;
+  text-decoration: none !important;
 }
 
 #buttonArticle a:hover {
@@ -490,14 +494,15 @@ button span:nth-child(4) {
   .sidenav {
     padding-top: 15px;
     height: 100%;
-    width: 0;
+    width: 0%;
     position: fixed;
     top: 0;
-    right: 40%;
+    right: 10%;
     background-color: black;
     overflow-x: hidden;
     transition: 1s;
     padding-top: 60px;
+    z-index: 100;
   }
   .sidenav a {
     font-size: 18px;
