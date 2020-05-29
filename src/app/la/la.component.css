@@ -1,0 +1,17 @@
+.model {
+  width: 90%;
+  height: 100%;
+  padding-top: 5%;
+  position: relative;
+}
+.a {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.innerbox {
+  width: 90%;
+  height: 100px;
+  border: 1px solid black;
+}

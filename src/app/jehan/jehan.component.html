@@ -1,0 +1,43 @@
+<div
+  class="col-md-12 mainbox"
+  style="display: table-caption; margin-left: 80px; position: relative;"
+>
+  <h2 class="a" style="font-size: 20px;">
+    Details of coustomers
+  </h2>
+  <div *ngFor="let d of data">
+    <div class="col-md-12 innerbox">
+      <div class="col-md-12" style="display: flex;">
+        <div class="col-md-9">
+          <p style="font-size: 15px; font-weight: bolder;">
+            Name:<span style="font-size: 15px; font-weight: normal;">
+              {{ d.name }}</span
+            >
+          </p>
+
+          <p style="font-size: 15px; font-weight: bolder;">
+            Phone:<span style="font-size: 15px; font-weight: normal;">{{
+              d.phone
+            }}</span>
+          </p>
+
+          <p style="font-size: 15px; font-weight: bolder;">
+            Email:<span style="font-size: 15px; font-weight: normal;">{{
+              d.email
+            }}</span>
+          </p>
+        </div>
+        <div class="col-md-3">
+          <button
+            class="btn btn-danger"
+            style="width: 100px; margin-top: 8px;"
+            (click)="onDelete(d)"
+          >
+            Delete
+          </button>
+        </div>
+      </div>
+    </div>
+    <br />
+  </div>
+</div>

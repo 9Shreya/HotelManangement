@@ -1,0 +1,26 @@
+.image {
+  margin-top: -25px;
+  height: 500px;
+  width: 1300px;
+  overflow: hidden;
+  animation: frank 35s infinite;
+  /* animation: name duration timing-function delay iteration-count direction
+          fill-mode; */
+}
+@keyframes frank {
+  0% {
+    background-image: url(D:\angularprojects\projectangular\src\assets\54.jpg);
+  }
+  25% {
+    background-image: url(D:\angularprojects\projectangular\src\assets\53.jpg);
+  }
+  50% {
+    background-image: url(D:\angularprojects\projectangular\src\assets\52.jpg);
+  }
+  75% {
+    background-image: url(D:\angularprojects\projectangular\src\assets\51.jpg);
+  }
+  100% {
+    background-image: url(D:\angularprojects\projectangular\src\assets\50.jpg);
+  }
+}

@@ -1,0 +1,41 @@
+<div class="div">
+  <p class="a" style="font-size: 40px;">Verify</p>
+  <div class="diiv">
+    <form #user="ngForm" (ngSubmit)="validate(user)">
+      <div class="form-group">
+        <p class="a">Full Name</p>
+
+        <input
+          type="text"
+          #na="ngModel"
+          name="name"
+          id=""
+          [(ngModel)]="name"
+          class="form-control"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <p class="a">Password</p>
+
+        <input
+          type="password"
+          #pass="ngModel"
+          name="pass"
+          id=""
+          [(ngModel)]="password"
+          class="form-control"
+          required
+        /><br />
+      </div>
+      <button
+        class="btn btn-success"
+        style="width: 40%;"
+        [disabled]="user.invalid"
+        routerLink="admin-signup"
+      >
+        Login
+      </button>
+    </form>
+  </div>
+</div>
